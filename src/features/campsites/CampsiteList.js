@@ -4,7 +4,7 @@ import CampsiteCard from "./CampsiteCard";
 
 const CampsiteList = () => {
   return (
-    <Row>
+    <Row className="ms-auto">
       {CAMPSITES.map((campsite) => {
         return (
           <Col md="5" className="m-4" key="{campsite.id}">
