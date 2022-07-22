@@ -5,7 +5,9 @@ export const selectAllCampsites = () => {
 };
 
 export const selectCampsiteById = (id) => {
-  return CAMPSITES.find((campsite) => campsite.id === parseInt(id));
+  const siteId = typeof id != "number" ? parseInt(id) : id;
+
+  return CAMPSITES.find((campsite) => campsite.id === siteId);
 };
 
 export const selectFeaturedCampsite = () => {
