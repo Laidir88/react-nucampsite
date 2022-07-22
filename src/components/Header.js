@@ -18,7 +18,7 @@ const Header = (props) => {
     <Navbar dark color="primary" sticky="top" expand="md">
       <NavbarBrand href="/" className="ms-5">
         <img src={NucampLogo} alt="nucamp logo" className="float-start" />
-        <h1 className="mt-1">NuCampe</h1>
+        <h1 className="mt-1">NuCamp</h1>
       </NavbarBrand>
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
