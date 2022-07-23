@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 import CampsitesDirectoryPage from "./pages/CampsitesDirectoryPage";
 import CampsiteDetailPage from "./pages/CampsiteDetailPage";
+import AboutPage from "./pages/AboutPage";
 import "./App.css";
 
 function App() {
@@ -13,11 +14,11 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        // the "/" path prop is to say it doesn't route to anywhere
         <Route path="/" element={<HomePage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="directory" element={<CampsitesDirectoryPage />} />
         <Route path="directory/:campsiteId" element={<CampsiteDetailPage />} />
+        <Route path="about" element={<AboutPage />} />
       </Routes>
       <Footer />
     </div>
